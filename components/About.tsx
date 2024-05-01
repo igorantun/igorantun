@@ -28,9 +28,9 @@ const About = () => (
       .
     </Paragraph>
     <Paragraph>
-      As a <Underline className="decoration-green-500">Tech Lead</Underline> at Z1,
-      I pioneered the development of a digital bank, architecting and leading
-      critical business products that{" "}
+      As a <Underline className="decoration-green-500">Tech Lead</Underline> at
+      Z1, I pioneered the development of a digital bank, architecting and
+      leading critical business products that{" "}
       <Underline className="decoration-green-500">
         reliably handled hundreds of thousands of monthly transactions
       </Underline>{" "}

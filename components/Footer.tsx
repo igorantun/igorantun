@@ -6,13 +6,12 @@ const Footer = () => (
   <footer className="flex flex-col">
     {Object.entries(siteConfig.links).map(([name, href]) => (
       <Link
-        isBlock
         isExternal
         key={name}
         href={href}
         showAnchorIcon
         color="success"
-        className="w-min"
+        className="w-min ml-4 mt-2"
       >
         {name}
       </Link>

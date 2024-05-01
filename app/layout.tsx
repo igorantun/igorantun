@@ -41,7 +41,7 @@ export default function RootLayout({
           fontMono.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
           <ScrollShadow className="h-screen">
             <main className="container mx-auto max-w-7xl px-6 py-6 md:py-16 flex-grow">
               {children}

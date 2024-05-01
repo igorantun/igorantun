@@ -1,6 +1,7 @@
 import Menu from "@/components/Menu";
 import Profile from "@/components/Profile";
 import About from "@/components/About";
+import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
 const Home = () => {
@@ -15,8 +16,7 @@ const Home = () => {
       </div>
       <div className="md:w-3/5 flex flex-col gap-16">
         <About />
-        <About />
-        <About />
+        <Experience />
       </div>
     </div>
   );

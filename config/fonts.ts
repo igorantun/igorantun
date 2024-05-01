@@ -1,7 +1,7 @@
 import {
   Outfit as FontSans,
   Zilla_Slab as FontMono,
-  Shantell_Sans as FontSerif,
+  Grape_Nuts as FontSerif,
 } from "next/font/google";
 
 export const fontSans = FontSans({

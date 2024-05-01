@@ -4,7 +4,7 @@ import Paragraph from "@/components/Paragraph";
 import SectionTitle from "@/components/SectionTitle";
 
 const About = () => (
-  <section>
+  <section id="about" className="pt-8 md:pt-16">
     <SectionTitle className="text-green-500">About me</SectionTitle>
     <Paragraph>
       I'm Igor, a <b>Senior Software Engineer</b> based in Brazil 👋

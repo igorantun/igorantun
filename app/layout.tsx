@@ -42,8 +42,8 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <ScrollShadow className="h-screen">
-            <main className="container mx-auto max-w-7xl px-6 py-6 md:py-16 flex-grow">
+          <ScrollShadow className="h-screen scroll-smooth">
+            <main className="container mx-auto max-w-7xl px-6 flex-grow">
               {children}
             </main>
           </ScrollShadow>

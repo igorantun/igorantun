@@ -1,12 +1,11 @@
 import clsx from "clsx";
 import { Metadata, Viewport } from "next";
+import { ScrollShadow } from "@nextui-org/scroll-shadow";
 
 import "@/styles/globals.css";
-import Footer from "@/components/Footer";
 import { siteConfig } from "@/config/site";
+import { Providers } from "@/app/providers";
 import { fontMono, fontSans, fontSerif } from "@/config/fonts";
-import { Providers } from "./providers";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 
 export const metadata: Metadata = {
   title: {
@@ -43,13 +42,11 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <ThemeSwitcher />
-          <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+          <ScrollShadow className="h-screen">
+            <main className="container mx-auto max-w-7xl px-6 py-6 md:py-16 flex-grow">
               {children}
             </main>
-            <Footer />
-          </div>
+          </ScrollShadow>
         </Providers>
       </body>
     </html>

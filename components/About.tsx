@@ -7,7 +7,7 @@ const About = () => (
   <section id="about" className="pt-8 md:pt-16">
     <SectionTitle className="text-green-500">About me</SectionTitle>
     <Paragraph>
-      I'm Igor, a <b>Senior Software Engineer</b> based in Brazil 👋
+      I&apos;m Igor, a <b>Senior Software Engineer</b> based in Brazil 👋
       <BrazilIcon />
     </Paragraph>
     <Paragraph>
@@ -18,9 +18,9 @@ const About = () => (
       was all we had to make them interactive.
     </Paragraph>
     <Paragraph>
-      Fast-forward to today and I've had the priviledge of working at a diverse
+      Fast-forward to today and I&apos;ve had the priviledge of working at a diverse
       variety of projects and companies, ranging from seed stage startups to
-      IPO'd enterprises. Specialized in Node.js (Typescript), React, and AWS —
+      IPO&apos;d enterprises. Specialized in Node.js (Typescript), React, and AWS —
       but always open to using new stacks — I now have over{" "}
       <Underline className="decoration-green-500">
         8 years of work experience
@@ -40,7 +40,7 @@ const About = () => (
     </Paragraph>
     <Paragraph>
       At Pagar.me (a StoneCo company), I contributed to large-scale financial
-      infrastructure, responsible for processing a massive share of Brazil's
+      infrastructure, responsible for processing a massive share of Brazil&apos;s
       ecommerce TPV. There, I contributed to core payment processing systems as
       well as got the opportunity to work on prototyping new products, ranging
       from mobile applications to external APIs and SDKs.

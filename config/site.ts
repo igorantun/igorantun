@@ -11,7 +11,7 @@ export const siteConfig = {
   ],
   navMenuItems: [],
   links: {
-    github: "https://github.com/igorantun",
-    linkedin: "https://www.linkedin.com/in/igorantun",
+    GitHub: "https://github.com/igorantun",
+    LinkedIn: "https://www.linkedin.com/in/igorantun",
   },
 };

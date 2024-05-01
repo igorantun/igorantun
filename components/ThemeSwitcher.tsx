@@ -21,8 +21,8 @@ export function ThemeSwitcher() {
 
   return (
     <Switch
-      size="md"
-      color="primary"
+      size="sm"
+      color="default"
       isSelected={theme === "light"}
       onValueChange={() => setTheme(theme === "light" ? "dark" : "light")}
       thumbIcon={({ isSelected, className }) =>

@@ -1,46 +1,64 @@
-import { Avatar } from "@nextui-org/avatar";
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
-
 import SectionTitle from "@/components/SectionTitle";
-import { Chip } from "@nextui-org/chip";
+import ExperienceCard from "@/components/ExperienceCard";
 
 const Experience = () => (
-  <section>
-    <SectionTitle className="text-orange-500">Experience</SectionTitle>
-    <Card className="p-4">
-      <CardHeader className="flex-col items-start p-0">
-        <div className="flex items-center gap-4">
-          <Avatar
-            isBordered
-            radius="full"
-            size="md"
-            src="https://assets-global.website-files.com/64803fcf2c63890e8809f716/64803ffb08a7fb99893e38ea_Seriesfi%20Apple%20Icon.png"
-          />
-          <div className="flex flex-col items-start justify-center">
-            <h4 className="font-bold text-large">Series</h4>
-            <p className="text-tiny uppercase font-bold">
-              Senior Software Engineer
-            </p>
-            <small className="text-default-500">
-              AUGUST 2023 - MARCH 2024 (Remote @ US)
-            </small>
-          </div>
-        </div>
-      </CardHeader>
-      <CardBody className="overflow-visible p-0">
-        <div className="flex gap-1 py-2">
-          <Chip size="sm">Typescript</Chip>
-          <Chip size="sm">Node.js</Chip>
-          <Chip size="sm">Nest.js</Chip>
-          <Chip size="sm">React.js</Chip>
-          <Chip size="sm">PostgreSQL</Chip>
-          <Chip size="sm">Terraform</Chip>
-        </div>
-        AWS Series is an enterprise operating system that unifies your finances
-        and operations. At Series I worked as a Software Engineer on both the
-        backend (Nest.js) and frontend (React.js) of their suite of products.
-      </CardBody>
-    </Card>
+  <section id="experience" className="pt-8 md:pt-16">
+    <SectionTitle className="text-orange-500">Work experience</SectionTitle>
+    <div className="flex flex-col gap-4">
+      <ExperienceCard
+        title="Series"
+        role="Senior Software Engineer"
+        date="AUGUST 2023 - APRIL 2024"
+        location="Remote @ US"
+        skills={[
+          "Typescript",
+          "Node.js",
+          "Nest.js",
+          "React",
+          "PostgreSQL",
+          "Terraform",
+          "AWS",
+        ]}
+        description="Series is an enterprise operating system that unifies your finances
+        and operations.\nAt Series I worked as a Software Engineer on both the
+        backend (Nest.js) and frontend (React.js) of their suite of products."
+        logo="https://pbs.twimg.com/profile_images/1671212645784096768/agg34sLj_400x400.png"
+      />
+      <ExperienceCard
+        title="Z1 (YCombinator W21)"
+        role="Tech Lead"
+        date="JUNE 2020 - JULY 2023"
+        location="Remote @ São Paulo, Brazil"
+        skills={[
+          "Typescript",
+          "Node.js",
+          "React Native",
+          "GraphQL",
+          "DynamoDB",
+          "Amazon SQS",
+          "Terraform",
+          "AWS",
+        ]}
+        description="Z1 is a digital bank from Brazil made for teenagers and young adults. At Z1, I was the very first empolyee and worked as a Tech Lead, responsible for architecting, developing, maintaining and monitoring critical business products such as Pix (instant bank transfers), card emitting and transaction processing. All of the tech stack is serverless and hosted on AWS."
+        logo="https://play-lh.googleusercontent.com/Jp9BaaHSU1hRXDUQY0tE46sP-us45EPPORDuuePgHY6mND_G2ELg0wxHKVkXqr4h_wM"
+      />
+      <ExperienceCard
+        title="Pagar.me"
+        role="Software Engineer"
+        date="JANUARY 2018 - MAY 2020"
+        location="São Paulo, Brazil"
+        skills={[
+          "Node.js",
+          "React",
+          "PostgreSQL",
+          "MongoDB",
+          "Terraform",
+          "AWS",
+        ]}
+        description="Pagar.me is a digital payment company based in Brazil. At Pagar.me, I was responsible for designing, developing, testing, deploying and maintaining scalable web services. We took care of the product from its conception to its deployment, including planning its infrastructure, continuously improving it through customer feedback, and monitoring its performance."
+        logo="https://avatars.githubusercontent.com/u/3846050?s=280&v=4"
+      />
+    </div>
   </section>
 );
 

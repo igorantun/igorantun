@@ -7,7 +7,9 @@ const SectionTitle = ({
   className: string;
   children: ReactNode;
 }) => (
-  <h1 className={`mb-2 font-serif font-bold text-3xl ${className}`}>
+  <h1
+    className={`mb-2 font-serif font-bold text-3xl underline decoration-2 decoration-wavy underline-offset-4 ${className}`}
+  >
     {children}
   </h1>
 );

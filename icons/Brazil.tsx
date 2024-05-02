@@ -1,4 +1,4 @@
-export const BrazilIcon = () => (
+export const BrazilIcon = ({ size }: { size?: number }) => (
   <span
     style={{
       display: "inline-block",
@@ -6,8 +6,8 @@ export const BrazilIcon = () => (
     }}
   >
     <svg
-      width="24"
-      height="24"
+      width={size ?? "24"}
+      height={size ?? "24"}
       aria-hidden="true"
       focusable="false"
       role="presentation"

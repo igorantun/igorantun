@@ -8,13 +8,19 @@ import { Providers } from "@/app/providers";
 import { fontMono, fontSans, fontSerif } from "@/config/fonts";
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
+  title: siteConfig.name,
   description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
+  },
+  openGraph: {
+    type: "profile",
+    locale: "en_US",
+    url: "https://igorantun.com",
+    siteName: siteConfig.name,
+    title: "Igor Antun - Senior Software Engineer",
+    images: ["https://igorantun.vercel.app/images/preview.png"],
+    description: siteConfig.description,
   },
 };
 

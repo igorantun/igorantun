@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Tabs, Tab } from "@nextui-org/tabs";
+import Link from "next/link";
 
 const colors: {
   [key: string]: string;
@@ -17,7 +18,7 @@ const Menu = () => {
   const color = selected in colors ? colors[selected] : "default";
 
   return (
-    <div className="self-start">
+    <div className="hidden md:block flex-grow ml-auto px-16">
       <Tabs
         size="lg"
         isVertical
@@ -25,14 +26,17 @@ const Menu = () => {
         selectedKey={selected}
         onSelectionChange={(key: any) => setSelected(key)}
         classNames={{
-          tab: "justify-start",
+          tab: "justify-end",
           cursor: `w-full ${color}`,
         }}
       >
-        <Tab key="about" title="About" />
-        <Tab key="experience" title="Experience" />
-        <Tab key="projects" title="Projects" />
-        <Tab key="education" title="Education" />
+        <Tab key="about" title={<Link href="#about">About</Link>} />
+        <Tab
+          key="experience"
+          title={<Link href="#experience">Experience</Link>}
+        />
+        <Tab key="projects" title={<Link href="#projects">Projects</Link>} />
+        <Tab key="education" title={<Link href="#education">Education</Link>} />
       </Tabs>
     </div>
   );

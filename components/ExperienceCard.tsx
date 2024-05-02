@@ -4,6 +4,7 @@ import { Card, CardHeader, CardBody } from "@nextui-org/card";
 
 const ExperienceCard = ({
   logo,
+  slug,
   title,
   role,
   date,
@@ -12,6 +13,7 @@ const ExperienceCard = ({
   skills,
 }: {
   logo: string;
+  slug: string;
   title: string;
   role: string;
   date: string;
@@ -19,7 +21,7 @@ const ExperienceCard = ({
   description: string;
   skills: string[];
 }) => (
-  <Card className="p-4" shadow="sm">
+  <Card id={slug} className="p-4" shadow="sm">
     <CardHeader className="flex-col items-start p-0">
       <div className="flex items-center gap-4">
         <Avatar isBordered radius="full" size="md" src={logo} />

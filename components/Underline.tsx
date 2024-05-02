@@ -7,7 +7,7 @@ const Underline = ({
   section: string;
   children: ReactNode;
 }) => (
-  <span className={`underline decoration-2 text-${section}`}>{children}</span>
+  <span className={`underline decoration-2 decoration-${section}`}>{children}</span>
 );
 
 export default Underline;

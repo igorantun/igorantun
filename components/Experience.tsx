@@ -6,6 +6,7 @@ const Experience = () => (
     <SectionTitle section="experience">Work experience</SectionTitle>
     <div className="flex flex-col gap-4">
       <ExperienceCard
+        slug="series"
         title="Series"
         role="Senior Software Engineer"
         date="AUGUST 2023 - APRIL 2024"
@@ -25,6 +26,7 @@ const Experience = () => (
         logo="https://pbs.twimg.com/profile_images/1671212645784096768/agg34sLj_400x400.png"
       />
       <ExperienceCard
+        slug="z1"
         title="Z1 (YCombinator W21)"
         role="Tech Lead"
         date="JUNE 2020 - JULY 2023"
@@ -43,6 +45,7 @@ const Experience = () => (
         logo="https://play-lh.googleusercontent.com/Jp9BaaHSU1hRXDUQY0tE46sP-us45EPPORDuuePgHY6mND_G2ELg0wxHKVkXqr4h_wM"
       />
       <ExperienceCard
+        slug="pagarme"
         title="Pagar.me"
         role="Software Engineer"
         date="JANUARY 2018 - MAY 2020"

@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import { Metadata, Viewport } from "next";
 import { ScrollShadow } from "@nextui-org/scroll-shadow";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "@/styles/globals.css";
 import { siteConfig } from "@/config/site";
@@ -54,6 +55,7 @@ export default function RootLayout({
             </main>
           </ScrollShadow>
         </Providers>
+        <SpeedInsights />
       </body>
     </html>
   );

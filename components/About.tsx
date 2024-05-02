@@ -1,24 +1,20 @@
-import { BrazilIcon } from "@/icons/Brazil";
 import Underline from "@/components/Underline";
 import Paragraph from "@/components/Paragraph";
 import SectionTitle from "@/components/SectionTitle";
 
 const About = () => (
   <section id="about" className="pt-8 md:pt-16">
-    <SectionTitle className="text-green-500">About me</SectionTitle>
+    <SectionTitle section="about">About me</SectionTitle>
     <Paragraph>
       👋 I&apos;m Igor, a <b>Senior Software Engineer</b> with over{" "}
-      <Underline className="decoration-green-500">
-        8 years of work experience
-      </Underline>
-      .
+      <Underline section="about">8 years of work experience</Underline>.
     </Paragraph>
     <Paragraph>
       Technology has been a significant part of my life since pretty much
       always. Stimulated by my father, my first contact with programming was at{" "}
-      <Underline className="decoration-green-500">age 8</Underline>, back when
-      webpages were just a lot of pretty tables and Adobe Flash (ActionScript)
-      was all we had to make them interactive.
+      <Underline section="about">age 8</Underline>, back when webpages were just
+      a lot of pretty tables and Adobe Flash (ActionScript) was all we had to
+      make them interactive.
     </Paragraph>
     <Paragraph>
       Fast-forward to today and I&apos;ve had the priviledge of working at a
@@ -27,10 +23,10 @@ const About = () => (
       React, and AWS — but always open to using new stacks.
     </Paragraph>
     <Paragraph>
-      As a <Underline className="decoration-green-500">Tech Lead</Underline> at
-      Z1, I pioneered the development of a digital bank, architecting and
-      leading critical business products that{" "}
-      <Underline className="decoration-green-500">
+      As a <Underline section="about">Tech Lead</Underline> at Z1, I pioneered
+      the development of a digital bank, architecting and leading critical
+      business products that{" "}
+      <Underline section="about">
         reliably handled hundreds of thousands of monthly transactions
       </Underline>{" "}
       using serverless technologies. I was their very first hire and worked

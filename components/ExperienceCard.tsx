@@ -35,7 +35,7 @@ const ExperienceCard = ({
     <CardBody className="overflow-visible p-0">
       <div className="flex gap-1 py-2">
         {skills.map((skill) => (
-          <Chip key={skill} size="sm" className="font-mono bg-orange-500/75">
+          <Chip key={skill} size="sm" className={`font-mono bg-experience/75`}>
             {skill}
           </Chip>
         ))}

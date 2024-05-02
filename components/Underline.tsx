@@ -1,11 +1,13 @@
 import { ReactNode } from "react";
 
 const Underline = ({
-  className,
+  section,
   children,
 }: {
-  className: string;
+  section: string;
   children: ReactNode;
-}) => <span className={`underline decoration-2 ${className}`}>{children}</span>;
+}) => (
+  <span className={`underline decoration-2 text-${section}`}>{children}</span>
+);
 
 export default Underline;

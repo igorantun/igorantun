@@ -3,7 +3,7 @@ import ExperienceCard from "@/components/ExperienceCard";
 
 const Experience = () => (
   <section id="experience" className="pt-8 md:pt-16">
-    <SectionTitle className="text-orange-500">Work experience</SectionTitle>
+    <SectionTitle section="experience">Work experience</SectionTitle>
     <div className="flex flex-col gap-4">
       <ExperienceCard
         title="Series"

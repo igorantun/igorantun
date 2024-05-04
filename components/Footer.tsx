@@ -12,9 +12,10 @@ const Footer = () => (
       size="lg"
       isExternal
       isIconOnly
-      variant="light"
       color="default"
+      variant="light"
       aria-label="GitHub"
+      className="fill-foreground"
       href={siteConfig.links.GitHub}
     >
       <GitHubIcon size={32} />
@@ -24,9 +25,10 @@ const Footer = () => (
       size="lg"
       isExternal
       isIconOnly
-      variant="light"
       color="default"
+      variant="light"
       aria-label="LinkedIn"
+      className="fill-foreground"
       href={siteConfig.links.LinkedIn}
     >
       <LinkedInIcon size={32} />

@@ -21,10 +21,16 @@ const ExperienceCard = ({
   description: string;
   skills: string[];
 }) => (
-  <Card id={slug} className="p-4" shadow="sm">
+  <Card id={slug} className="p-4 border-experience/50 border-2" shadow="sm">
     <CardHeader className="flex-col items-start p-0">
       <div className="flex items-center gap-4">
-        <Avatar isBordered radius="full" size="md" src={logo} />
+        <Avatar
+          size="md"
+          src={logo}
+          isBordered
+          radius="full"
+          className="ring-experience"
+        />
         <div className="flex flex-col items-start justify-center">
           <h4 className="text-lg font-bold">{title}</h4>
           <p className="text-xs uppercase font-bold">{role}</p>

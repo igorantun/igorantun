@@ -7,10 +7,18 @@ import Projects from "@/components/Projects";
 
 const Colors = () => (
   <span>
-    <span className="hidden aria-hidden text-about bg-about decoration-about">.</span>
-    <span className="hidden aria-hidden text-experience bg-experience decoration-experience">.</span>
-    <span className="hidden aria-hidden text-projects bg-projects decoration-projects">.</span>
-    <span className="hidden aria-hidden text-education bg-education decoration-education">.</span>
+    <span className="hidden aria-hidden text-about bg-about decoration-about">
+      .
+    </span>
+    <span className="hidden aria-hidden text-experience bg-experience decoration-experience">
+      .
+    </span>
+    <span className="hidden aria-hidden text-projects bg-projects decoration-projects">
+      .
+    </span>
+    <span className="hidden aria-hidden text-education bg-education decoration-education">
+      .
+    </span>
   </span>
 );
 

@@ -23,9 +23,12 @@ const About = () => (
       React, and AWS — but always open to using new stacks.
     </Paragraph>
     <Paragraph>
-      As a <Underline section="about">Tech Lead</Underline> at  <a href="#z1" className="text-experience">Z1</a>, I pioneered
-      the development of a digital bank, architecting and leading critical
-      business products that{" "}
+      As a <Underline section="about">Tech Lead</Underline> at{" "}
+      <a href="#z1" className="text-experience">
+        Z1
+      </a>
+      , I pioneered the development of a digital bank, architecting and leading
+      critical business products that{" "}
       <Underline section="about">
         reliably handled hundreds of thousands of monthly transactions
       </Underline>{" "}
@@ -34,7 +37,11 @@ const About = () => (
       engineering team.
     </Paragraph>
     <Paragraph>
-      At <a href="#pagarme" className="text-experience">Pagar.me</a> (a StoneCo company), I contributed to large-scale financial
+      At{" "}
+      <a href="#pagarme" className="text-experience">
+        Pagar.me
+      </a>{" "}
+      (a StoneCo company), I contributed to large-scale financial
       infrastructure, responsible for processing a massive share of
       Brazil&apos;s ecommerce TPV. There, I contributed to core payment
       processing systems as well as got the opportunity to work on prototyping

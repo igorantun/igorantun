@@ -35,7 +35,7 @@ const ProjectCard = ({
     };
 
     fetchData();
-  }, []);
+  }, [slug]);
 
   return (
     <Card className="p-4" shadow="sm">

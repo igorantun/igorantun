@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Profile from "@/components/Profile";
 
 const Sidebar = () => (
-  <div className="flex flex-col justify-between">
+  <div className="h-full flex flex-col justify-between items-center">
     <Profile />
     <Menu />
     <Footer />

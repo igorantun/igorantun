@@ -24,7 +24,7 @@ const Colors = () => (
 
 const Home = () => (
   <div className="flex flex-col md:flex-row justify-between">
-    <div className="md:w-2/5 md:sticky top-0 pt-6 md:pt-16 h-full">
+    <div className="md:w-2/5 md:sticky top-0 pt-6 md:py-16 md:h-[100vh]">
       <Sidebar />
     </div>
     <div className="md:w-3/5 pb-6 md:pb-16 flex flex-col">

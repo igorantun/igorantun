@@ -12,11 +12,15 @@ const ProjectCard = ({
   title,
   description,
   skills,
+  fallbackStars,
+  fallbackForks,
 }: {
   slug: string;
   title: string;
   description: string;
   skills: string[];
+  fallbackStars: number;
+  fallbackForks: number;
 }) => {
   const [data, setData] = useState({
     stargazers_count: 0,
@@ -39,7 +43,7 @@ const ProjectCard = ({
   }, [slug]);
 
   return (
-    <Card className="p-4 border-projects/50 border-2" shadow="sm">
+    <Card id={slug} className="p-4 border-projects/50 border-2" shadow="sm">
       <CardHeader className="flex-col items-start p-0">
         <div className="flex items-center gap-4">
           <Avatar
@@ -53,7 +57,8 @@ const ProjectCard = ({
           <div className="flex flex-col items-start justify-center">
             <h4 className="text-lg font-bold">{title}</h4>
             <p className="text-xs uppercase font-bold">
-              {data.stargazers_count} Stars & {data.forks_count} Forks
+              {data.stargazers_count || fallbackStars} Stars &{" "}
+              {data.forks_count || fallbackForks} Forks
             </p>
           </div>
         </div>

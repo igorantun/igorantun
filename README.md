@@ -1,4 +1,4 @@
-### Hi there! 👋
+# Hi there! <img src="https://raw.githubusercontent.com/igorantun/igorantun/main/wave.gif" width="30">
 
 I'm Igor, a Senior Software Engineer with 8 years of experience. Mostly specialized in Node.js (TypeScript), React and AWS, with a proven record in both seed stage startups and IPO’d enterprises. Lifelong learner with deep expertise in fintechs and system architecture.
 

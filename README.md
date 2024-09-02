@@ -27,6 +27,5 @@ I'm Igor, a Senior Software Engineer with 8 years of experience. Mostly speciali
 ### Statistics
 
 <p>
-  <img height=180 align="center" src="https://github-readme-stats.vercel.app/api?username=igorantun&count_private=true&show_icons=true&include_all_commits=true&hide=issues,contribs&hide_rank=true&theme=dark"/>
-  <img height=180 hspace=20 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=igorantun&layout=compact&langs_count=8&card_width=340&theme=dark" />
+  <img height=180 src="https://github-readme-stats.vercel.app/api/top-langs?username=igorantun&layout=compact&langs_count=8&card_width=340&theme=dark" />
 </p>

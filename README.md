@@ -23,9 +23,3 @@ I'm Igor, a Senior Software Engineer with 8 years of experience. Mostly speciali
 ![Docker](https://img.shields.io/badge/-Docker-black?style=flat&logo=docker)
 ![Amazon AWS](https://img.shields.io/badge/Amazon%20AWS-black?style=flat&logo=amazon-aws)
 ![Terraform](https://img.shields.io/badge/Terraform-black?style=flat&logo=terraform)
-
-### Statistics
-
-<p>
-  <img height=180 src="https://github-readme-stats.vercel.app/api/top-langs?username=igorantun&layout=compact&langs_count=8&card_width=340&theme=dark" />
-</p>

@@ -1,0 +1,13 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { assetPath } from "../config/deployment";
+import { profile } from "../config/profile";
+const href = assetPath("/opengraph-image.png");
+---
+
+<Layout noindex title={`Social preview — ${profile.name}`}>
+  <meta slot="head" http-equiv="refresh" content={`0;url=${href}`} />
+  <main class="portfolio">
+    <a href={href}>Open the social preview image</a>
+  </main>
+</Layout>

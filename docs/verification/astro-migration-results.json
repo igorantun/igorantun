@@ -1,0 +1,150 @@
+{
+  "before": {
+    "external_js_gzip": 143012,
+    "all_js_raw": 493948,
+    "inline_js_raw": 15994,
+    "inline_js_gzip": 3994,
+    "html_gzip": 5524,
+    "css_gzip": 2066,
+    "total_bytes": 243656,
+    "requests": 11,
+    "runs": [
+      {
+        "load_ms": 43.400000005960464,
+        "dom_ready_ms": 28.5,
+        "theme_ready_ms": 44.30000001192093,
+        "first_paint_ms": 60,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 40.599999994039536,
+        "dom_ready_ms": 27.5,
+        "theme_ready_ms": 41.30000001192093,
+        "first_paint_ms": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 37.900000005960464,
+        "dom_ready_ms": 23.400000005960464,
+        "theme_ready_ms": 38.5,
+        "first_paint_ms": 64,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 31.200000017881393,
+        "dom_ready_ms": 19.900000005960464,
+        "theme_ready_ms": 32.10000002384186,
+        "first_paint_ms": 60,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 36.400000005960464,
+        "dom_ready_ms": 24.700000017881393,
+        "theme_ready_ms": 37.5,
+        "first_paint_ms": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      }
+    ],
+    "median": {
+      "load_ms": 37.900000005960464,
+      "dom_ready_ms": 24.700000017881393,
+      "theme_ready_ms": 38.5,
+      "first_paint_ms": 60
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "after": {
+    "external_js_gzip": 0,
+    "all_js_raw": 987,
+    "inline_js_raw": 987,
+    "inline_js_gzip": 491,
+    "html_gzip": 2802,
+    "css_gzip": 1990,
+    "total_bytes": 97846,
+    "requests": 5,
+    "runs": [
+      {
+        "load_ms": 22.30000001192093,
+        "dom_ready_ms": 20.900000005960464,
+        "theme_ready_ms": 16.80000001192093,
+        "first_paint_ms": 60,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 24.700000017881393,
+        "dom_ready_ms": 23.200000017881393,
+        "theme_ready_ms": 18.700000017881393,
+        "first_paint_ms": 56,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 27.700000017881393,
+        "dom_ready_ms": 25.5,
+        "theme_ready_ms": 21.30000001192093,
+        "first_paint_ms": 64,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 25.900000005960464,
+        "dom_ready_ms": 24.400000005960464,
+        "theme_ready_ms": 20.400000005960464,
+        "first_paint_ms": 60,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      },
+      {
+        "load_ms": 28.5,
+        "dom_ready_ms": 26.400000005960464,
+        "theme_ready_ms": 21.5,
+        "first_paint_ms": 64,
+        "viewport": [
+          1280,
+          1000
+        ],
+        "visibility": "visible"
+      }
+    ],
+    "median": {
+      "load_ms": 25.900000005960464,
+      "dom_ready_ms": 24.400000005960464,
+      "theme_ready_ms": 20.400000005960464,
+      "first_paint_ms": 60
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  }
+}

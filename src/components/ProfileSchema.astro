@@ -1,0 +1,49 @@
+---
+import { profile } from "../config/profile";
+import { siteUrl } from "../config/deployment";
+
+const currentWork = profile.experience.find((work) => work.end === null);
+const personId = `${siteUrl}#person`;
+const websiteId = `${siteUrl}#website`;
+const schema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": websiteId,
+      url: siteUrl,
+      name: profile.name,
+      inLanguage: "en",
+      publisher: { "@id": personId },
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": `${siteUrl}#profile`,
+      url: siteUrl,
+      name: `${profile.name} — ${profile.role}`,
+      description: profile.intro,
+      inLanguage: "en",
+      isPartOf: { "@id": websiteId },
+      mainEntity: {
+        "@type": "Person",
+        "@id": personId,
+        name: profile.name,
+        url: siteUrl,
+        jobTitle: profile.role,
+        description: profile.intro,
+        image: new URL("images/profile-social.webp", siteUrl).href,
+        sameAs: profile.links
+          .filter((link) => link.href.startsWith("https://"))
+          .map((link) => link.href),
+        ...(currentWork && {
+          worksFor: { "@type": "Organization", name: currentWork.company },
+        }),
+      },
+    },
+  ],
+};
+// Keep profile text from terminating the JSON-LD script element.
+const json = JSON.stringify(schema).replace(/</g, "\\u003c");
+---
+
+<script type="application/ld+json" set:html={json} />

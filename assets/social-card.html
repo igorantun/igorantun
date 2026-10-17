@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Igor Antun — social card artwork</title>
+    <style>
+      @font-face {
+        font-family: Geist;
+        src: url("../src/assets/fonts/geist-sans.woff2") format("woff2");
+        font-weight: 100 900;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1200px;
+        height: 630px;
+      }
+      body {
+        background: #faf9f6;
+        color: #292824;
+        font-family: Geist, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        height: 100%;
+        padding: 80px 88px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .introduction {
+        display: grid;
+        grid-template-columns: 1fr 208px;
+        align-items: center;
+        gap: 56px;
+      }
+      img {
+        width: 208px;
+        height: 208px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 64px;
+        font-weight: 550;
+        line-height: 1.05;
+        letter-spacing: -2px;
+      }
+      .role {
+        margin: 0;
+        color: #6c6a64;
+        font-size: 28px;
+        line-height: 1.4;
+        letter-spacing: -0.5px;
+      }
+      .statement {
+        margin: 44px 0 0;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 1.24;
+        letter-spacing: -0.85px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="introduction">
+        <div>
+          <header>
+            <h1>Igor Antun</h1>
+            <p class="role">Senior Software Engineer</p>
+          </header>
+          <p class="statement">
+            Building financial products<br />and the systems behind them.
+          </p>
+        </div>
+        <img src="profile.jpg" width="208" height="208" alt="Igor Antun" />
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "GeistSans";
+  src: url("../assets/fonts/geist-sans.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+/* Match the original fallback metrics while the self-hosted font loads. */
+@font-face {
+  font-family: "GeistSans Fallback";
+  src: local("Arial");
+  ascent-override: 94.56%;
+  descent-override: 27.76%;
+  line-gap-override: 0%;
+  size-adjust: 106.28%;
+}
+
+:root {
+  --font-geist-sans: "GeistSans", "GeistSans Fallback";
+}

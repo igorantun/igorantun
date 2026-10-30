@@ -8,6 +8,8 @@
   --hover-surface: #eeece6;
   --selection: #dfddd3;
   --theme-transition: 180ms ease;
+  --interaction-transition: 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  --press-transition: 100ms ease;
 }
 
 :root[data-theme="dark"] {
@@ -165,6 +167,9 @@ button:focus-visible {
   letter-spacing: -0.015em;
   line-height: 1.5;
 }
+.company-link {
+  min-height: 24px;
+}
 .work-role {
   order: 1;
   flex-basis: 100%;
@@ -216,28 +221,36 @@ button:focus-visible {
   padding: 0;
   margin: 0;
 }
-.text-link {
+.outbound-link {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  min-height: 44px;
-  font-size: 0.8125rem;
-  color: var(--text-secondary);
+  min-width: 24px;
   text-decoration: none;
   transition:
     color var(--theme-transition),
-    transform 100ms ease;
+    transform var(--press-transition);
+}
+.text-link {
+  min-height: 44px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
 }
 .external-arrow {
-  transition: transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  flex-shrink: 0;
+  opacity: 0.65;
+  transition:
+    opacity var(--interaction-transition),
+    transform var(--interaction-transition);
 }
-.text-link:focus-visible {
+.outbound-link:focus-visible {
   color: var(--text);
 }
-.text-link:focus-visible .external-arrow {
+.outbound-link:focus-visible .external-arrow {
+  opacity: 1;
   transform: translate(1px, -1px);
 }
-.text-link:active {
+.outbound-link:active {
   transform: translateY(1px);
 }
 
@@ -258,7 +271,7 @@ button:focus-visible {
   transition:
     background-color var(--theme-transition),
     color var(--theme-transition),
-    transform 100ms ease;
+    transform var(--press-transition);
 }
 .theme-toggle:focus-visible {
   color: var(--text);
@@ -276,7 +289,7 @@ button:focus-visible {
   position: absolute;
   transition:
     opacity var(--theme-transition),
-    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+    transform var(--interaction-transition);
 }
 .theme-icon-sun {
   opacity: 0;
@@ -296,10 +309,16 @@ button:focus-visible {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  .text-link:hover {
+  .outbound-link .external-arrow {
+    opacity: 0;
+  }
+  .outbound-link:hover,
+  .outbound-link:focus-visible {
     color: var(--text);
   }
-  .text-link:hover .external-arrow {
+  .outbound-link:hover .external-arrow,
+  .outbound-link:focus-visible .external-arrow {
+    opacity: 1;
     transform: translate(1px, -1px);
   }
   .theme-toggle:hover {

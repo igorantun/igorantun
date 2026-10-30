@@ -43,7 +43,17 @@ import { assetPath } from "../config/deployment";
         {profile.experience.map((work) => (
           <li>
             <div class="work-heading">
-              <h3>{work.company}</h3>
+              <h3>
+                <a
+                  class="outbound-link company-link"
+                  href={work.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>{work.company}</span>
+                  <ExternalArrow />
+                </a>
+              </h3>
               <p class="work-role">{work.role}</p>
               <p class="work-dates">
                 <time datetime={work.start.date}>{work.start.label}</time>
@@ -70,7 +80,7 @@ import { assetPath } from "../config/deployment";
           {profile.links.map((link) => (
             <li>
               <a
-                class="text-link"
+                class="outbound-link text-link"
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
